@@ -28,12 +28,14 @@ def two_parameters(list, number):
     length_of_list = len(list)
     for tree in list:
        i += 1
-       if i == number:
+       if i - 1 == number:
         return tree
     if number > length_of_list:
                 print("No value here!")
 
-
+# 3. Write a function that has one parameter: a list 
+#   a. The list that is passed in needs to be a list of numbers 
+#   b. Find the most frequent value in the list and return that value
 
 average_number_of_list(list_of_numbers)
 two_parameters(trees_list, 2)
