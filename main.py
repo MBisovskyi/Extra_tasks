@@ -37,5 +37,30 @@ def two_parameters(list, number):
 #   a. The list that is passed in needs to be a list of numbers 
 #   b. Find the most frequent value in the list and return that value
 
+most_freaquent_list = [3, 1, 2, 3, 3, 2, 3, 1, 3, 4, 3]
+
+def most_freaquent_value(list):
+    counter = 0
+    number = list[0]
+    for i in list:
+        freaquency = list.count(i)
+        if freaquency > counter:
+            counter = freaquency
+            number = i
+    return number
+
+
+#   4. Write a function that has two parameters: a list, a list 
+#       a. Both lists that are passed in should contain the first names of people 
+#       b. Iterate over the lists comparing the values at each index from one list to the 
+#           other. If there is a matching name in both lists, return that name from the 
+#           function 
+#       c. For example: [“Nevin”, “David”, “Mike”] and [“Brett”, “Mike”, “Charles] 
+#       i. “Mike” would be returned from the function because it is a match in both 
+#           lists
+
+
+
 average_number_of_list(list_of_numbers)
-two_parameters(trees_list, 2)
+print(two_parameters(trees_list, 2))
+print(most_freaquent_value(most_freaquent_list))
