@@ -9,13 +9,31 @@ list = []
 
 def average_number_of_list(numbers):
     average_number = sum(numbers) / len(numbers)
-    print(average_number)
     i = 0
     for number in list_of_numbers:
         i = number
         if i < average_number:
             list.append(i)
-    print(list)
+
+
+
+# 2. Write a function that has two parameters: a list, a number 
+#       a. Return the value in the list at the index represented by the number parameter 
+#       b. If there is no value at the specified index, print to the console “No value here!”
+
+trees_list = ["Oak", "Hamlock", "Linden", "Maple"]
+
+def two_parameters(list, number):
+    i = 0
+    length_of_list = len(list)
+    for tree in list:
+       i += 1
+       if i == number:
+        return tree
+    if number > length_of_list:
+                print("No value here!")
+
 
 
 average_number_of_list(list_of_numbers)
+two_parameters(trees_list, 2)
