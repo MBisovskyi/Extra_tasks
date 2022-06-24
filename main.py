@@ -26,10 +26,10 @@ trees_list = ["Oak", "Hamlock", "Linden", "Maple"]
 def two_parameters(list, number):
     i = 0
     length_of_list = len(list)
-    for tree in list:
+    for element in list:
        i += 1
        if i - 1 == number:
-        return tree
+        return element
     if number > length_of_list:
                 print("No value here!")
 
