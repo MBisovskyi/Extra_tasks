@@ -59,8 +59,21 @@ def most_freaquent_value(list):
 #       i. “Mike” would be returned from the function because it is a match in both 
 #           lists
 
+list_with_names1 = ["Brian", "Patrick", "Laura", "Derek", "Nick", "Ryan"]
+list_with_names2 = ["Robert", "Damian", "Ryan", "Max", "Greg", "Mitchell"]
 
+def compare_two_lists(list1, list2):
+    length_of_list = len(list_with_names1)
+    is_name_matching = False
+    while is_name_matching is False:
+        i = 0                                                       # Not finished! Don't work!
+        for name in list_with_names1:
+            i += 1
+            if name == list_with_names2[i]:
+                return name
+        continue
 
 average_number_of_list(list_of_numbers)
 print(two_parameters(trees_list, 2))
 print(most_freaquent_value(most_freaquent_list))
+print(compare_two_lists(list_with_names1, list_with_names2))
